@@ -11,6 +11,7 @@ import com.vaulto.lite.data.settings.SettingsRepository
 import com.vaulto.lite.data.settings.ThemeMode
 import com.vaulto.lite.domain.insights.Insight
 import com.vaulto.lite.domain.insights.InsightsEngine
+import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
 import java.util.Calendar
