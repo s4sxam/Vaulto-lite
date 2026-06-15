@@ -21,7 +21,7 @@ class MainActivity : ComponentActivity() {
         val app = application as VaultoApplication
 
         setContent {
-            val viewModel = viewModel(
+            val viewModel = viewModel<MainViewModel>(
                 factory = MainViewModelFactory(app.repository, app.settingsRepository)
             )
 
