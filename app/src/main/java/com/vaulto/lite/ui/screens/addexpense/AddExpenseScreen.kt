@@ -35,6 +35,7 @@ import java.util.Locale
  * all fields (including date), so edits persist the original date unless
  * changed via the date picker.
  */
+@OptIn(androidx.compose.material3.ExperimentalMaterial3Api::class)
 @Composable
 fun AddExpenseScreen(
     viewModel: MainViewModel,
