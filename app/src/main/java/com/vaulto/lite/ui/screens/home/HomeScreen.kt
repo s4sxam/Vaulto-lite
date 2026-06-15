@@ -201,6 +201,7 @@ fun HomeScreen(
     }
 }
 
+@OptIn(androidx.compose.material3.ExperimentalMaterial3Api::class)
 @Composable
 private fun VaultoTopBar(month: Int, year: Int, onPrevious: () -> Unit, onNext: () -> Unit) {
     TopAppBar(
