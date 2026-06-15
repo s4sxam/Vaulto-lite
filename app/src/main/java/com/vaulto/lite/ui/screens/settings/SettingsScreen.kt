@@ -33,6 +33,7 @@ import com.vaulto.lite.ui.util.collectAsStateWithLifecycleCompat
  * - Appearance: dark mode toggle + currency picker, both DataStore-backed
  * - Data: Backup/Restore JSON with confirmation dialogs
  */
+@OptIn(androidx.compose.material3.ExperimentalMaterial3Api::class)
 @Composable
 fun SettingsScreen(viewModel: MainViewModel) {
     val categories by viewModel.categories.collectAsStateWithLifecycleCompat()
