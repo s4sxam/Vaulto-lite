@@ -8,6 +8,7 @@ import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.runtime.getValue
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.vaulto.lite.data.settings.ThemeMode
+import com.vaulto.lite.ui.MainViewModel
 import com.vaulto.lite.ui.MainViewModelFactory
 import com.vaulto.lite.ui.navigation.VaultoNavHost
 import com.vaulto.lite.ui.theme.VaultoLiteTheme
