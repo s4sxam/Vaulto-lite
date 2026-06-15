@@ -17,7 +17,7 @@ import com.vaulto.lite.data.local.entity.ExpenseEntity
 @Database(
     entities = [CategoryEntity::class, ExpenseEntity::class, BudgetEntity::class],
     version = 1,
-    exportSchema = true
+    exportSchema = false
 )
 @TypeConverters(MapConverter::class, RecurrenceTypeConverter::class)
 abstract class VaultoDatabase : RoomDatabase() {
