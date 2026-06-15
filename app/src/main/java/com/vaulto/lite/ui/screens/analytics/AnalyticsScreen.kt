@@ -2,6 +2,7 @@ package com.vaulto.lite.ui.screens.analytics
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
@@ -30,6 +31,7 @@ enum class AnalyticsPeriod(val label: String) {
  * - Recurring expenses summary
  * - Export report button (PDF/CSV)
  */
+@OptIn(androidx.compose.material3.ExperimentalMaterial3Api::class)
 @Composable
 fun AnalyticsScreen(viewModel: MainViewModel) {
     var selectedPeriod by remember { mutableStateOf(AnalyticsPeriod.THIS_MONTH) }
@@ -168,7 +170,7 @@ private fun InsightsCarousel(insights: List<com.vaulto.lite.domain.insights.Insi
         androidx.compose.foundation.lazy.LazyRow(
             horizontalArrangement = Arrangement.spacedBy(12.dp)
         ) {
-            androidx.compose.foundation.lazy.items(insights) { insight ->
+            items(insights) { insight ->
                 Card(
                     shape = MaterialTheme.shapes.medium,
                     modifier = Modifier.width(220.dp)
