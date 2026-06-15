@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Status-bar notification icon. Must be a flat silhouette per Android
+  guidelines (system tints it automatically). Uses evenOdd fill so the
+  dial reads as a cut-out hole in the vault body, echoing the main mark
+  at small sizes.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillType="evenOdd"
+        android:pathData="M4,4 L20,4 A2,2 0 0 1 22,6 L22,18 A2,2 0 0 1 20,20 L4,20 A2,2 0 0 1 2,18 L2,6 A2,2 0 0 1 4,4 Z M12,16 A4,4 0 1 0 12,8 A4,4 0 1 0 12,16 Z" />
+</vector>

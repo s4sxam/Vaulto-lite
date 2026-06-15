@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Vaulto Lite adaptive icon foreground.
+  Mirrors the vault-dial signature mark: a rounded vault face with a
+  coin-slot dial and handle, rendered in cream so it sits on the
+  saffron adaptive background (see colors.xml: ic_launcher_background).
+  Viewport matches the 108x108 adaptive icon safe-zone convention.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Inner panel -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.16"
+        android:pathData="M35,35 L73,35 A8,8 0 0 1 81,43 L81,73 A8,8 0 0 1 73,81 L35,81 A8,8 0 0 1 27,73 L27,43 A8,8 0 0 1 35,35 Z" />
+
+    <!-- Dial ring -->
+    <path
+        android:fillColor="#FFF8F0"
+        android:pathData="M54,72 A18,18 0 1 0 54,36 A18,18 0 1 0 54,72 Z" />
+    <path
+        android:fillColor="#E8893A"
+        android:pathData="M54,68 A14,14 0 1 0 54,40 A14,14 0 1 0 54,68 Z" />
+    <path
+        android:fillColor="#FFF8F0"
+        android:pathData="M54,64 A10,10 0 1 0 54,44 A10,10 0 1 0 54,64 Z" />
+
+    <!-- Dial notch -->
+    <path
+        android:fillColor="#FFF8F0"
+        android:pathData="M50,30 L58,30 A4,4 0 0 1 58,38 L50,38 A4,4 0 0 1 50,30 Z" />
+
+    <!-- Coin slot -->
+    <path
+        android:fillColor="#E8893A"
+        android:pathData="M44,52 L64,52 A4,4 0 0 1 64,60 L44,60 A4,4 0 0 1 44,52 Z" />
+
+    <!-- Handle -->
+    <path
+        android:fillColor="#FFF8F0"
+        android:pathData="M84,50 L98,50 A8,8 0 0 1 98,66 L84,66 Z" />
+</vector>
