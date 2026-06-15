@@ -106,9 +106,7 @@ fun AddExpenseScreen(
             ) {
                 CircularProgressIndicator()
             }
-            return@Scaffold
-        }
-
+        } else {
         Column(
             modifier = Modifier
                 .fillMaxSize()
@@ -224,6 +222,7 @@ fun AddExpenseScreen(
             ) {
                 Text("Save")
             }
+        }
         }
     }
 }
